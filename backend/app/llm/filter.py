@@ -1,0 +1,43 @@
+IT_KEYWORDS = [
+    "react",
+    "nextjs",
+    "vue",
+    "angular",
+    "javascript",
+    "typescript",
+    "node",
+    "express",
+    "python",
+    "django",
+    "fastapi",
+    "java",
+    "spring",
+    "php",
+    "laravel",
+    "mysql",
+    "postgresql",
+    "mongodb",
+    "database",
+    "sql",
+    "docker",
+    "kubernetes",
+    "aws",
+    "azure",
+    "gcp",
+    "devops",
+    "api",
+    "erp",
+    "crm",
+    "hrms",
+    "programming",
+    "software",
+    "frontend",
+    "backend",
+    "machine learning",
+    "artificial intelligence",
+    "cyber security"
+]
+
+def is_it_question(question: str):
+    q = question.lower()
+    return any(word in q for word in IT_KEYWORDS)
